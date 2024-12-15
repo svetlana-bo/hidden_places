@@ -2,9 +2,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Aarhus Craft Beer Society</title>
+    <meta name="description" content="Explore hidden Craft Beer places in Aarhus">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    
+
+<!-- Hero section-->
+<section class="hero-wrapper">
+
+<!-- Top nav-->
+ 
+<div class="top-nav">
+    <!-- Top nav-->
+    <a class="menu">
+      <img src="../images/icon-menu.svg" alt="Menu">
+    </a>
+</div>
+
+<!-- Hero content-->
+<div class="hero">
+<img src="/images/logo-light.png" alt="Logo" style="height: 72px;">
+
+  <h1>
+    Welcome to <br>
+    Aarhus Craft Beer <br>
+    Society
+  </h1>
+</div>
+
+<p class="hero-text">
+    Discover Aarhus’ hidden craft beer places, that celebrate the finest local and international brews.
+</p>
+</section>    
+
+<section class="beer-search-wrapper"> 
+<h3>Looking for a special beer?</h3>
+<div class="search-bar">
+    <form action="/search" method="GET">
+      <div class="search-container">
+        <img src="../images/icon-search.svg" alt="Search Icon" class="search-icon">
+        <input 
+          type="text" 
+          name="query" 
+          placeholder="What type of beer are you craving?" 
+          class="search-input">
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- Explore the hidden places section-->
+
+
+<section class="explore-section"> 
+<h2>Explore hidden places</h2>
+
+<div class="cards-wrapper">
+ <div class="place-card">
+    <h3>Erling Jazz- & Ølbar</h3>
+    <img src="images/places/erling1.jpeg" alt="Erling Jazz Picture" class="card-image">
+    <p><strong>Address:</strong> Nørreport 8, Aarhus C</p>
+    <br>
+    <p>Erling Jazz is a charming beer bar celebrated for its intimate ambiance and live jazz performances. Featuring a diverse range of craft beers, it's a must-visit destination for jazz enthusiasts and craft beer lovers exploring Aarhus.</p>
+    <a href="erlings.html" class="button">Learn More</a>
+  </div>
+
+  <div class="place-card">
+    <h3>Væskebalancen bar</h3>
+    <img src="/images/places/veske1.jpeg" alt="Væskebalancen bar picture" class="card-image">
+    <p><strong>Address:</strong> Jægergårdsgade 2A, Aarhus C</p>
+    <br>
+    <p>A cozy basement venue offering a curated selection of craft beers. With 14 rotating taps, patrons can enjoy a diverse range of brews, including both local and international options. The bar's informal and welcoming atmosphere makes it a popular spot for beer enthusiasts.</p>
+    <a href="vaeskebalancen.html" class="button">Learn more</a>
+  </div>
+
+  <div class="place-card">
+    <h3>Mig & Ølsnedkeren</h3>
+    <img src="/images/places/mig1.jpeg" alt="Mig og Ølsnedkeren picture" class="card-image">
+    <p><strong>Address:</strong> Mejlgade 12, Aarhus C</p>
+    <br>
+    <p>Mig & Ølsnedkeren is a lively craft beer hub in Aarhus, renowned for its rotating taps featuring experimental brews from their Copenhagen brewery. With its rustic charm and focus on innovative beer experiences, it’s a favorite spot for locals and visitors seeking unique flavors in the city.</p>
+    <a href="mig_og_oelnedskeren.html" class="button">Learn more</a>
+  </div>
+ </div>
+</div>
+
+</section>
+
+<!-- Footer section-->
+
+<footer class="footer">
+    <div class="footer-content">
+      <p>Discover the best hidden craft beer spots in Aarhus</p>
+      <p>&copy; 2024 Aarhus Craft Beer Society. All rights reserved.</p>
+      <nav class="footer-nav">
+      </nav>
+    </div>
+  </footer>
+
 </body>
 </html>

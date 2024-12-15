@@ -1,0 +1,323 @@
+/* Define default styles with mobile-first approach */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+
+body {
+    background-color: #324B48;
+    font-size: 16px;
+    color: #F0F0F2;
+    font-family: "Noto Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 100%;
+  }
+  
+h1  {color:#F0F0F2;
+    font-family: Lustria;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.7;
+    margin-top: 20px;
+}
+
+h2 {color:#F0F0F2;
+    font-family: Lustria;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+
+h3 {color:#F0F0F2;
+    font-family: Lustria;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+a {
+    text-decoration: none; /* Removes the underline */
+    color: inherit; /* Inherits the text color from the parent */
+    cursor: pointer; /* Ensures the pointer cursor */
+    padding: none;
+    margin: none;
+}
+
+.button {
+    
+    display: inline-block;
+    background-color: transparent;
+    color:#F0F0F2;
+    border: 1px solid #F0F0F2;
+    border-radius: 12px;
+    font-size: 16px;
+    padding: 6px 12px;
+    cursor: pointer;
+    margin-top: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;;
+  }
+
+  .button:hover {
+    background-color: #D9B79A; /* Hover effect */
+    border: 1px solid #D9B79A;
+  }
+
+ .button:active {
+    background-color: #D9B79A; /* Hover effect */
+    border: 1px solid #D9B79A;
+ }
+
+  .top-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 24px;
+    width: 100%; 
+    box-sizing: border-box;
+  } 
+
+  .top-nav .logo img {
+    height: 30px;
+    width: auto;
+  }
+  
+  .top-nav .menu img {
+    height: 30px;
+    width: auto;
+    cursor: pointer;
+    background-color: transparent;
+  }
+
+  .logo-display {
+    height: 72px;
+  }
+
+ /* Index page */ 
+
+.hero-wrapper {
+  background: 
+  linear-gradient(rgba(50, 75, 72, 0.8), rgba(50, 75, 72, 0.8)), /* Tint layer */
+  url('../images/background.png'); /* Path to your image */
+  background-size: cover; /* Ensures the image covers the entire section */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents tiling */
+  color: #F0F0F2; /* Ensures text color contrasts with the background */
+  text-align: center; /* Centers all text inside */
+  padding-bottom: 200px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 160px;
+    text-align: center;
+    padding: 0;
+}
+
+
+.logo-display {
+    height: 72px;
+    padding-bottom: 24px;
+    margin: 16px 0;
+  }
+
+.hero-text {
+    display: flex;
+    margin-top: 120px;
+    text-align: center;
+    padding: 0 30px
+    
+}
+
+
+
+
+/*Styling Beer Search container*/
+
+.beer-search-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    width: 100%;
+}
+
+
+/* Style the search bar */
+.search-bar {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 5px;
+    box-sizing: border-box;
+  }
+  
+  /* Search container styling */
+  .search-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Icon and input align left inside */
+    border: 1px solid #F0F0F2; 
+    border-radius: 15px; 
+    padding: 5px 10px; /* Inner padding */
+    background-color: transparent; /* Transparent background */
+    width: 80%; 
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  /* Style the search icon */
+  .search-icon {
+    height: 20px;
+    width: 20px;
+    margin-right: 0px; /* Space between icon and input */
+    opacity: 0.7; /* Optional: Slight transparency */
+  }
+  
+  /* Style the search input */
+  .search-input {
+    flex: 1; /* Ensures the input takes the available space */
+    border: none; /* Remove default border */
+    outline: none; /* Remove focus outline */
+    background-color: transparent; /* Transparent background */
+    color: #F0F0F2; /* Whitish text color */
+    font-size: 16px; /* Adjust font size */
+    font-style: italic; /* Italic placeholder text */
+  }
+  
+  .search-input::placeholder {
+    color: #F0F0F2; /* Placeholder color matches the theme */
+    opacity: 0.7; /* Slight transparency for the placeholder */
+  }
+
+  form {
+    margin: 0; /* Reset default margins */
+    padding: 0; /* Reset default padding */
+    width: 100%; /* Ensure it doesn’t constrain child elements */
+  }
+
+
+/* Styling Explore hidden places section */
+
+.explore-section {
+    margin: 65px 0 0 0;
+}
+
+
+.cards-wrapper {
+    display: flex; /* Arrange cards in a row */
+    flex-direction: column; /* Vertical alignment on smaller screens */
+    gap: 20px; /* Space between cards */
+    justify-content: center; /* Center cards horizontally */
+    align-items: center;
+    padding: 0px;
+    width: 100%;
+    padding-top: 15px;
+}
+
+/* Card container styling */
+.place-card {
+    background-color: #324B48; /* Match the page theme */
+    color: #F0F0F2;
+    border: none;
+    box-shadow: none !important;
+    padding: 15px 25px;
+    text-align: center;
+    width: 100%;
+    max-width: 400px; /* Restrict the width */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  }
+
+  .place-card h3 {
+    color: #D9B79A;
+    margin-bottom: 5;
+}  
+  .place-card p {
+    text-align: left;
+  }
+
+/* Image styling */
+.card-image {
+    display: block;
+    margin: 0 auto 16px; /* Center and space below */
+    width: 100%;
+    max-width: 340px; /* Constrain width */
+    height: 250px; /* Fixed height */
+    object-fit: cover; /* Maintain aspect ratio, crop if necessary */
+    border-radius: 10px; /* Optional: Add slight rounding */
+    margin-bottom: 30px;
+  }  
+
+
+/*Footer */
+
+
+.footer {
+    background-color: #859290; 
+    color: #F0F0F2; 
+    text-align: center; /* Center align the content */
+    padding: 20px; /* Space around the content */
+    margin-top: 40px; /* Space above the footer */
+  }
+  
+  .footer-content {
+    max-width: 1200px; /* Constrain the width */
+    margin: 0 auto; /* Center the content */
+  }
+  
+  .footer p {
+    font-size: 14px; /* Smaller text for footer info */
+    margin-bottom: 10px; /* Space below the text */
+  }
+  
+
+
+
+
+  /* Adjust for larger screens (desktop) */
+ 
+@media (min-width: 768px) {
+    body {
+      font-size: 20px; 
+    }
+
+    h1 {
+        font-size: 80px; 
+    }
+
+    h2 {
+        font-size: 40px; 
+    }
+
+    h3 {
+        font-size: 32px; 
+    }
+    
+    button {
+      font-size: 18px;
+      padding: 12px 20px;
+    }
+    .search-container {
+        max-width: 500px; /* Wider max-width on desktop */
+      }
+    
+    .cards-wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center; 
+        align-self: flex-start;
+        align-items: stretch;
+        gap: 20px; /* Maintain spacing between cards */
+    }
+  }

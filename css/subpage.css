@@ -1,0 +1,425 @@
+ /* Styling Subpages */
+
+/* Top navigation bar styling */
+.top-nav-subpage {
+    display: flex; /* Arrange items in a row */
+    justify-content: space-between; /* Space out logo and menu */
+    align-items: center; /* Vertically center items */
+    padding: 24px; /* Space around the nav items */
+    width: 100%; /* Full width */
+    box-sizing: border-box; /* Include padding in width calculation */
+    background-color: none;
+    top: 0;
+    z-index: 10; /* Ensure it stays above other elements */
+  }
+  
+  /* Logo styling */
+  .logo img {
+    height: 30px; /* Adjust logo size */
+    width: auto; /* Maintain aspect ratio */
+  }
+  
+  .photo-gallery {
+    position: relative;
+    width: 340px;
+    max-width: 400px;
+    height: 360px;
+    margin: auto;
+    overflow: hidden;
+    border: 2px solid #ccc;
+  }
+  
+  #photo-display {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.5s ease-in-out; /* Smooth transition */
+    opacity: 1; /* Default visible */
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Smooth sliding transition */
+  }
+  
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 1;
+  }
+  
+  .left-arrow {
+    left: 5px;
+  }
+  
+  .right-arrow {
+    right: 5px;
+  }
+
+/* Info */
+
+  .hours-of-work {
+    text-align: center; /* Center the text */
+    margin-top: 20px; /* Add some space above */
+  }
+
+  .story-box {
+    max-width: 1084px; /* Limit the maximum width */
+    margin: 20px auto; /* Center the box (auto on left and right margins) and add space on top */
+    padding: 0 24px; /* Add padding for better readability */
+    text-align: justify; /* Justify the text for a clean look */
+      
+  }
+
+
+
+/* On Tap Section */
+
+  .on-tap-section, .event-section, .reviews-section {
+    width: 100%;
+    max-width: 1084px; /* Ensure responsive width */
+    margin: 20px auto; /* Center the section */
+    padding: 0px 24px;
+  }
+  
+  .dropdown-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Keep title and arrow aligned */
+    cursor: pointer; /* Indicate it's clickable */
+    border-bottom: 2px solid #F0F0F2; /* Underline the section */
+  }
+  
+  .arrow-down {
+    margin-left: 10px;
+    font-size: 18px;
+  }
+
+  .arrow-rotated {
+    transform: rotate(180deg); /* Rotate arrow upwards */
+  }
+  
+ 
+
+  .beer-list {
+    list-style-type: none;
+    margin: 10px 0 0 0; /* Space above the list */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;   
+  }
+  
+  .beer-list li {
+    margin: 0 0;
+    padding: 5px 0;
+    border-bottom: 1px solid  #F0F0F2; /* Subtle underline for each item */
+  }
+  
+  .beer-item {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .beer-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .beer-name {
+    color: #D9B79A;
+  }
+  
+  .event-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 0 0; /* Space above the list */
+    max-height: 0; /* Hidden initially */
+    overflow: hidden; /* Ensure smooth collapse */
+    transition: max-height 0.5s ease-in-out;
+  }
+  
+  .event-list li {
+    margin: 0 0;
+    padding: 10px 0;
+    border-bottom: 1px solid #F0F0F2; /* Subtle underline for each item */
+  }
+  
+  .event-date {
+    font-weight: bold;
+    text-align: left; /* Left-align the date */
+  }
+  
+  .event-details {
+    margin-left: 96px; /* Indent time + event */
+  }
+  
+  .event-time {
+    font-weight: bold; /* Make the time bold */
+  }
+  
+  
+ 
+
+  /* Reviews Section Container */
+
+  .drop-downs {
+    display: grid;
+    grid-template-columns: 1fr; /* Default: 1 column on small screens */
+    gap: 0px; /* Add space between grid items */
+    padding: 16px;
+} 
+   
+  /* Drop-down content area */
+  .review-content {
+    display: flex; /* Ensures vertical alignment */
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    overflow: hidden; /* Hides content during animation */
+    max-height: 0; /* Collapsed state */
+    transition: max-height 0.5s ease-in-out; /* Smooth opening/closing */
+
+  }
+  
+  
+  /* Rating Container */
+  .rating {
+    display: flex;
+    flex-direction: column; /* Stack the icon and text vertically */
+    align-items: center; /* Center align both horizontally and vertically */
+    margin-top: 20px; /* Space above */
+  }
+  
+  /* Rate Section */
+  .rate {
+    margin-top: 15px; /* Space above */
+  }
+  
+/* Container for rating bubbles */
+.rating-bubbles {
+    display: flex;
+    justify-content: center; /* Center the bubbles */
+    gap: 8px; /* Space between bubbles */
+    margin-top: 10px; /* Space above the bubbles */
+  }
+  
+  /* Individual bubbles */
+  .rating-bubbles img {
+    width: 40px; /* Size of each bubble */
+    height: 40px;
+    cursor: pointer; /* Indicates clickability */
+    transition: transform 0.2s ease; /* Add subtle animation */
+  }
+  
+  .rating-bubbles img:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+  }
+  
+
+  /* Community Reviews Section */
+  .community_reviews {
+    margin-top: 15px; /* Space above */
+  }
+
+  .review-card {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    margin: 0.5em 0;
+    gap: 8px;
+    color: #f2f2f0;
+  }
+  
+  .review-meta {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+  }
+  
+  .review-meta img {
+    width: 63px;
+    height: 11px;
+  }
+  
+
+
+/* Find us section */
+.find-us-wrapper {
+    display: flex;
+    flex-direction: column; /* Default: stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center;
+    gap: 16px; /* Add spacing between elements */
+    padding: 0 24px; /* Add padding around the section */
+    text-align: center;
+    max-width: 1084px;
+    margin: 0 auto;
+}
+
+
+.address-box {
+      text-align: center; 
+      padding: 0;
+  }
+
+/* Social icons container */
+.social-icons {
+    display: flex;
+    justify-content: center; /* Center icons horizontally */
+    align-items: center; /* Center icons vertically if needed */
+    gap: 16px; /* Space between icons */
+    margin-top: 8px; /* Add spacing above the icons */
+}
+
+/* Social icons styling */
+.social-icons img {
+    width: 24px; /* Default size for smaller screens */
+    height: 24px; /* Ensure square aspect ratio */
+    transition: transform 0.2s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for icons */
+.social-icons a:hover img {
+    transform: scale(1.2); /* Slightly enlarge icon on hover */
+}
+
+
+.mapstyle {
+    width: 100%; /* Limit the maximum width */
+    max-width: 600px; /* Set a maximum width */
+    height: 340px !important; /* Set the height */
+    border: 2px solid #324B48; /* Fix border syntax */
+    margin: 24px 24px; /* Center the container horizontally */
+   }
+  
+
+/* Overlay background */
+.overlay {
+  position: fixed; /* Takes it out of the normal flow */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Dimmed background */
+  display: none; /* Ensure it doesn't affect layout */
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  }
+  
+  /* Visible overlay */
+  .overlay.visible {
+    display: flex;
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .reviews-section.rate {
+    display: none; /* Hide the rate section completely */
+  }
+  /* Overlay content */
+  .overlay-content {
+    background: #324B48;
+    width: 335px;
+    min-height: 350px;
+    margin-top: 20PX;
+    padding: 20px;
+    border-radius: 0px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px; /* Space between elements */
+    border: none;
+  }
+  
+  /* Close button */
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  /* Input fields */
+  .user-name, .user-feedback {
+    width: 100%;
+    height: fit-content;
+    background: #f2f2f0;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 10px;
+    font-family: inherit;
+  }
+  
+  .user-name::placeholder, .user-feedback::placeholder {
+    font-style: italic;
+    color: #324B48;
+  }
+  
+  .user-feedback {
+    height: 142px; /* Adjust height for the larger input */
+    resize: none; /* Disable resizing */
+  }
+  
+
+  /* Media query for screens wider than a tablet */
+@media screen and (min-width: 768px) {
+
+    .drop-downs {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns on larger screens */
+        gap: 24px; /* Adjust gap for larger layout */
+    }
+
+    .drop-downs > *:nth-child(4) {
+        grid-column: 2 / 3; /* Place the 4th element in the center column */
+            }
+
+    .find-us-wrapper {
+        flex-direction: row; /* Arrange items in a row */
+        justify-content: center; /* Center the entire row */
+        align-items: center; /* Align items to the top for consistency */
+        text-align: center;
+    }
+
+    .address-box {
+        flex: 0 0 34%; /* Set the text box to take up 40% of the row */
+        max-width: 34%; /* Ensure it doesn't grow beyond 40% */
+        text-align: left; /* Align text to the left for better readability */
+    }
+
+    .mapstyle {
+        flex: 0 0 66%; /* Set the map to take up 60% of the row */
+        max-width: 66%; /* Ensure it doesn't grow beyond 60% */
+        margin: 0; /* Remove any extra margin */
+        align-self: center; /* Center the map vertically */
+    }
+
+    .drop-downs h2,
+    .overlay h2,
+    .review-card h2 {
+        font-size: 26px
+    }
+
+    .review-card h3 {
+        font-size: 22px
+    }
+    .social-icons img {
+        width: 44px; /* Larger size for bigger screens */
+        height: 44px;
+    }
+
+}
+
+  

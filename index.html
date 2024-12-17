@@ -4,6 +4,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aarhus Craft Beer Society</title>
     <meta name="description" content="Explore hidden Craft Beer places in Aarhus">
+
+  <!-- Favicons-->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.png" type="image/png">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -37,26 +41,26 @@
 </section>    
 
 <section class="beer-search-wrapper"> 
-<h3>Looking for a special beer?</h3>
-<div class="search-bar">
-    <form action="/search" method="GET">
-      <div class="search-container">
-        <img src="../images/icon-search.svg" alt="Search Icon" class="search-icon">
-        <input 
-          type="text" 
-          name="query" 
-          placeholder="What type of beer are you craving?" 
-          class="search-input">
-      </div>
-    </form>
-  </div>
-</section>
+  <h3>Looking for a special beer?</h3>
+  <div class="search-bar">
+      <form action="/search" method="GET">
+        <div class="search-container">
+          <img src="../images/icon-search.svg" alt="Search Icon" class="search-icon">
+          <input 
+            type="text" 
+            name="query" 
+            placeholder="What type of beer are you craving?" 
+            class="search-input">
+        </div>
+      </form>
+    </div>
+  </section>  
 
 <!-- Explore the hidden places section-->
 
 
 <section class="explore-section"> 
-<h2>Explore hidden places</h2>
+<h2 style="color: #F0F0F2;">Explore hidden places</h2>
 
 <div class="cards-wrapper">
  <div class="place-card">
@@ -100,6 +104,10 @@
       </nav>
     </div>
   </footer>
+
+
+  <script src="javascript/main_script.js"></script>  
+  <script src="javascript/search.js"></script>  
 
 </body>
 </html>

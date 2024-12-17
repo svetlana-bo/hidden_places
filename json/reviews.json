@@ -1,0 +1,87 @@
+[
+      {
+        "place": "Erlings",
+        "name": "Tom S.",
+        "rating": "../images/rating-5bubs.svg",
+        "when": "3 days ago",
+        "review": "This is my local watering hole and I love the place. Always different beers on tap and good service. Occasionally there are also live music from local jazz musicians. Great place!!"
+      },
+      {
+        "place": "Erlings",
+        "name": "Andres P.",
+        "rating": "../images/rating-5bubs.svg",
+        "when": "1 month ago",
+        "review": "A really cozy place to enjoy chatting with friends and listen soft music. The personal is also very nice and there are good beers to choose."
+      },
+      {
+        "place": "Erlings",
+        "name": "Stefanie Z.",
+        "rating": "../images/rating-5bubs.svg",
+        "when": "1 month ago",
+        "review": "Cool live jazz, great beer selection and friendly staff. Come early if you want a seat!"
+      },
+      {
+        "place": "Erlings",
+        "name": "Morten M.",
+        "rating": "../images/rating-4bubs.png",
+        "when": "3 months ago",
+        "review": "Kind service. Fair prices. 10 craft beers on tap, a few bottles/can as well. Very small place, but very cosy."
+      },
+      {
+        "place": "Vaeskebalancen",
+        "name": "Morten B.",
+        "rating": "../images/rating-5bubs.svg",
+        "when": "2 days ago",
+        "review": "Best craftbeer bar in Aarhus according to me. 14 different taps with a wide selection from pilsner to sour, hoppy and dark. Also has a decent fridge with cans and bottles. Cosy modern hipster vibe. Service is super, especially the bartender Marcus has big beer knowledge and good guidance."
+      },
+      {
+        "place": "Vaeskebalancen",
+        "name": "Catherine O.",
+        "rating": "../images/rating-5bubs.svg",
+        "when": "14 days ago",
+        "review": "I absolutely love this cellar bar. The selection of pilsners are excellent, so was the IPAs. A lot of the beers have quite a high AVB but what we had were under our nothing more than 6%. We visited a few times and we’ll be back on our next trip."
+      },
+      {
+        "place": "Vaeskebalancen",
+        "name": "Petteri D.",
+        "rating": "../images/rating-3bubs.svg",
+        "when": "1 month ago",
+        "review": "Cozy craft beer bar. Their seating is quite bad though: the wooden box type seats look stylish and inviting, yet functionally their 90 degree angles just aren't comfortable to sit on at all, especially if you're a tall dude like me. Removes a lot from the experience since you'll be sitting down most of the time."
+      },
+      {
+        "place": "Vaeskebalancen",
+        "name": "Jesper R.",
+        "rating": "../images/rating-5bubs.svg",
+        "when": "1 month ago",
+        "review": "One of the best craftbeer bars in town. It pars with ølsnedkeren in many ways. Its hard to find ways to describe differences. A bit more variation on selection of craftbeer types. But here they have less space which makes it a cosier place with room for 'hygge'."
+      },
+      {
+        "place": "Mig og Oelsnedkeren",
+        "name": "Ry F.",
+        "rating": "../images/rating-5bubs.svg",
+        "when": "7 days ago",
+        "review": "An exceptional beer bar. We wandered in here before dinner. A fantastic selection of creative and tasty beers. The staff was knowledgeable and we had some great discussion of the beer styles and brewing in Denmark!"
+      },
+      {
+        "place": "Mig og Oelsnedkeren",
+        "name": "David R.",
+        "rating": "../images/rating-5bubs.svg",
+        "when": "14 days ago",
+        "review": "Fantastic craft beer bar in the center of Aarhus. 🤩 Impressive selection of quality beers and perhaps the..."
+      },
+      {
+        "place": "Mig og Oelsnedkeren",
+        "name": "Bob K.",
+        "rating": "../images/rating-5bubs.svg",
+        "when": "1 month ago",
+        "review": "Knowledgeable and friendly staff are able to find you beers that you want to drink from a good selection on draft of local and international beers and some real gems in the fridges."
+      },
+      {
+        "place": "Mig og Oelsnedkeren",
+        "name": "Angela V.",
+        "rating": "../images/rating-4bubs.svg",
+        "when": "1 month ago",
+        "review": "Not as good as the Copenhagen bar, but still worth a stop. Good beers on tap, not much on cans or bottles."
+      }
+]
+  

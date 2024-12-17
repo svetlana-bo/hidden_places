@@ -1,0 +1,13 @@
+<svg width="64" height="13" viewBox="0 0 64 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Property 1=1bub">
+<circle id="Ellipse 1" cx="32.5" cy="6.5" r="5" stroke="#859290"/>
+<circle id="Ellipse 2" cx="32.5" cy="6.5" r="5" stroke="#D9B79A"/>
+<circle id="Ellipse 5" cx="45.5" cy="6.5" r="5" stroke="#D9B79A"/>
+<circle id="Ellipse 8" cx="58.5" cy="6.5" r="5" stroke="#D9B79A"/>
+<circle id="Ellipse 3" cx="19.5" cy="6.5" r="5" stroke="#D9B79A"/>
+<g id="Small bubble">
+<path d="M12 6.5C12 9.53757 9.53757 12 6.5 12C3.46243 12 1 9.53757 1 6.5C1 3.46243 3.46243 1 6.5 1C9.53757 1 12 3.46243 12 6.5Z" fill="#D9B79A"/>
+<path d="M9.98452 4.52746L9.8737 4.29923C9.33951 3.19914 8.22292 2.50177 7 2.50444M6.1902 10.8114L6.13352 10.8055C4.53983 10.6374 3.17627 9.58698 2.60722 8.08889M12 6.5C12 9.53757 9.53757 12 6.5 12C3.46243 12 1 9.53757 1 6.5C1 3.46243 3.46243 1 6.5 1C9.53757 1 12 3.46243 12 6.5Z" stroke="#324B48"/>
+</g>
+</g>
+</svg>

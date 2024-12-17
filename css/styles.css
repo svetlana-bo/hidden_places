@@ -22,7 +22,7 @@ h1  {color:#F0F0F2;
     font-size: 30px;
     font-style: normal;
     font-weight: 400;
-    line-height: 1.7;
+    line-height: 2;
     margin-top: 20px;
 }
 
@@ -139,33 +139,53 @@ a {
   color: #F0F0F2; /* Ensures text color contrasts with the background */
   text-align: center; /* Centers all text inside */
   padding-bottom: 200px;
+  height: 100vh
 }
 
 .hero {
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 160px;
     text-align: center;
-    padding: 0;
+    padding: 140px 20px 0;
 }
+
+.hero img {
+  height: clamp(72px, 20vw, 240px); /* Min 72px, scales with viewport, max 240px */
+  width: auto; /* Keeps the aspect ratio */
+}
+
+/* Default: Mobile view (br is visible) */
+.mobile-break {
+  display: inline;
+}
+
+
+
+
+.hero-text {
+    
+  flex-grow: 1; /* Takes up the remaining space */
+  display:flex; /* For centering content */
+  justify-content: center;
+  align-items: center;
+  margin: 0; /* Remove default margin */
+  text-align: center;
+  max-width: 1000px; /* Optional: Set a max width */
+  width: 100%;
+  transform: translateY(-80px);
+}
+
+
 
 
 .logo-display {
-    height: 72px;
-    padding-bottom: 24px;
-    margin: 16px 0;
-  }
-
-.hero-text {
-    display: flex;
-    margin-top: 120px;
-    text-align: center;
-    padding: 0 30px
-    
+  height: 72px;
+  padding-bottom: 24px;
+  margin: 16px 0;
 }
-
 /*Styling Beer Search container*/
 
 .beer-search-wrapper {
@@ -284,16 +304,15 @@ a {
   }  
 
 .search-results {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .search-beer-item {
-    padding: 0.5rem;
-    border-bottom: 1px solid #ddd;
+  padding: 0.5rem;
+  border-bottom: 1px solid #ddd;
 }
 
 .search-bar-title {
-  padding-top: 20px;
   text-align: center;
 }
 
@@ -376,6 +395,7 @@ a {
 
     h1 {
         font-size: 80px; 
+        line-height: 1.2;
     }
 
     h2 {
@@ -386,6 +406,11 @@ a {
         font-size: 32px; 
     }
     
+    .hero-text {
+      transform: translateY(-20px);
+
+    }
+
     button {
       font-size: 18px;
       padding: 12px 20px;
@@ -402,4 +427,10 @@ a {
         align-items: stretch;
         gap: 20px; /* Maintain spacing between cards */
     }
+
+
+  .mobile-break {
+      display: none; /* Show the <br> only on desktop */
+
+}
 };

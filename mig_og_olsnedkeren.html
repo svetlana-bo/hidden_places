@@ -1,0 +1,191 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mig og Ølsnedkeren - Aarhus Craft Beer Society</title>
+    <meta name="description" content="Explore Mig og Ølsnedkeren bar in Aarhus">
+
+    <!-- Favicons-->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/subpage.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+   
+</head>
+<body>
+    
+
+    
+         <!-- Top nav section-->
+ 
+<div class="top-nav-subpage">
+    <!-- Top nav-->
+    <a href="index.html" class="logo">
+        <img src="/images/logo-light.png" alt="Logo">
+    </a>
+
+    <a class="menu">
+      <img src="../images/icon-menu.svg" alt="Menu">
+    </a>
+</div>
+
+ <!-- Info section-->
+ <section>  
+
+    <h2>Mig og Ølsnedkeren</h2>
+
+    <div class="photo-gallery">
+        <button class="arrow left-arrow">&lt;</button>
+        <div class="slider-container">
+          <div class="slider">
+            <!-- Images will be dynamically added here -->
+          </div>
+        </div>
+        <button class="arrow right-arrow">&gt;</button>
+      </div>
+
+      <div class="hours-of-work">
+        <p><strong>Mon-Wed:</strong> 14:00-00:00</p>
+        <p><strong>Thu:</strong> 14:00-01:00</p>
+        <p><strong>Fri-Sat:</strong> 12:00-02:00</p>
+        <p><strong>Sun:</strong> Closed</p>
+      </div>
+
+<p class="story-box">Mig & Ølsnedkeren has been a cornerstone of Aarhus’ craft beer scene since it opened its doors in 2015. Originally an extension of the popular Ølsnedkeren brewery in Copenhagen, the Aarhus location quickly established its own identity, blending the brewery’s experimental approach with a laid-back, neighborhood vibe. Situated in the heart of Mejlgade, it became a gathering spot for beer enthusiasts looking to explore a wide variety of unique and innovative brews.
+<br>
+<br>
+The bar is known for its ever-rotating taps, showcasing everything from hazy IPAs to barrel-aged stouts, often brewed in collaboration with other cutting-edge breweries. With its rustic interior and friendly atmosphere, Mig & Ølsnedkeren has become a must-visit for locals and visitors alike, embodying the creative spirit and community focus that define Aarhus’ craft beer culture.
+</p>
+</section>
+
+<section class="drop-downs">
+
+<div class="on-tap-section">
+    <h2 class="dropdown-title">
+      On tap this week
+      <span class="arrow-down">&#9660;</span> <!-- Downward arrow symbol -->
+    </h2>
+    <ul class="beer-list">
+      <!-- Beer names will be added dynamically -->
+    </ul>
+</div>
+
+<div class="event-section" data-place="Erlings Bar">
+    <h2 class="dropdown-title">
+      Upcoming events
+      <span class="arrow-down">&#9660;</span>
+    </h2>
+    <ul class="event-list">
+      <!-- Events will be dynamically added here -->
+    </ul>
+  </div>
+
+<!-- Reviews container -->
+  <div class="reviews-section dropdown"
+     data-rating-image="images/rating-4bubs.png"
+     data-rating="4.7"
+     data-reviews="24"
+     data-place="Erlings">
+    <h2 class="dropdown-title">
+      Reviews
+      <span class="arrow-down">&#9660;</span>
+    </h2>
+    <div class="review-content">
+      <!-- Content dynamically added here -->
+    </div>
+  </div>  
+  
+  <div class="reviews-section dropdown">
+ <h2 class="dropdown-title">
+   Find the place
+ </h2>
+</div>
+
+</section>
+
+<section class="find-us-wrapper">
+<div class="address-box">
+      <strong>Links to the place:</strong></p>
+      <div class="social-icons">
+        <a href="https://example.com" target="_blank" aria-label="Website">
+            <img src="images/icon-link.svg" alt="Link icon">
+        </a>
+        <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+            <img src="/images/icon-instagram.svg" alt="Instagram icon">
+        </a>
+        <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+            <img src="images/icon-facebook.svg" alt="Facebook icon">
+        </a>
+    </div>
+    <br>
+    <p><strong>Address: </strong>
+        <br>
+         Nørreport 8, Aarhus C, 8200
+         <br><br>
+</div>
+<div id="map" class="mapstyle"
+    data-lat="56.16061581212305" 
+    data-lng="10.21346334127921" 
+    data-zoom="15">
+</div>
+
+</section>
+
+<!-- Footer section-->
+
+<footer class="footer">
+    <div class="footer-content">
+      <p>Discover the best hidden craft beer spots in Aarhus</p>
+      <p>&copy; 2024 Aarhus Craft Beer Society. All rights reserved.</p>
+      <nav class="footer-nav">
+      </nav>
+    </div>
+  </footer>
+
+
+<!-- Submit review overlay -->
+<div class="reviews-section rate">
+    <div class="rating-bubbles"></div>
+  </div>
+  <div class="overlay hidden">
+    <div class="overlay-content">
+      <span class="close-button">&times;</span>
+      <h2>Rate your experience</h2>
+      <input type="text" class="user-name" placeholder="What is your name?" />
+      <div class="rating-bubbles"></div>
+      <textarea class="user-feedback" placeholder="Tell us more: what did you like, how was the atmosphere, which beer would you recommend"></textarea>
+      <button class="button">Submit</button>
+    </div>
+  </div>
+
+  
+
+ <!-- Submitted Review Overlay -->
+<div class="overlay submitted hidden">
+    <div class="overlay-content">
+      <img src="images/logo-light.png" alt="Logo" style="height: 72px; width: 48px;">
+      <h2>Thank you</h2>
+      <p>Your review has been submitted and will be posted on the website shortly.</p>
+      <button class="button go-back-button">Go back</button>
+    </div>
+  </div> 
+  
+<script src="javascript/main_script.js" ></script>
+<script src="javascript/overlays.js" defer></script>
+<script src="javascript/drop-down.js" defer></script>
+<script src="javascript/map.js" ></script>
+
+<script>
+    // Place 1 photos
+    const erlingPhotos = ["images/places/erling1.jpeg", "images/places/erling2.jpeg", "images/places/erling3.jpeg"];
+    initializePhotoGallery(erlingPhotos);
+  </script>
+
+</body>
+
+
+

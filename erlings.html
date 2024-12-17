@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,7 +12,7 @@
 
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/subpage.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
    
@@ -20,18 +21,32 @@
     
 
     
-         <!-- Top nav section-->
- 
+<!-- Top nav section-->
 <div class="top-nav-subpage">
     <!-- Top nav-->
     <a href="index.html" class="logo">
         <img src="/images/logo-light.png" alt="Logo">
     </a>
 
-    <a class="menu">
+    <a class="menu" id="menuIcon">
       <img src="../images/icon-menu.svg" alt="Menu">
     </a>
 </div>
+
+
+<!-- Burger Menu -->
+<nav class="menu-panel" id="menuPanel">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="erlings.html">Erlings Jazz- & Ølsbar</a></li>
+    <li><a href="vaeskebalancen.html">Væskebalancen</a></li>
+    <li><a href="mig_og_olsnedkeren.html">Mig og Ølsnedkeren</a></li>
+    <li>
+      <a href="#" id="languageToggle">EN / DA</a>
+    </li>
+  </ul>
+</nav>
+
 
  <!-- Info section-->
  <section>  
@@ -64,7 +79,7 @@
 
 <section class="drop-downs">
 
-<div class="on-tap-section">
+<div class="on-tap-section" data-place="Is in Erlings">
     <h2 class="dropdown-title">
       On tap this week
       <span class="arrow-down">&#9660;</span> <!-- Downward arrow symbol -->
@@ -109,7 +124,7 @@
 
 <section class="find-us-wrapper">
 <div class="address-box">
-      <strong>Links to the place:</strong></p>
+   <h4><strong>Links to the place:</strong></h4>
       <div class="social-icons">
         <a href="https://example.com" target="_blank" aria-label="Website">
             <img src="images/icon-link.svg" alt="Link icon">
@@ -121,10 +136,10 @@
             <img src="images/icon-facebook.svg" alt="Facebook icon">
         </a>
     </div>
-     <p><strong>Address: </strong>
-     <br>
-      Nørreport 8, Aarhus C, 8200
-      <br><br>
+    <br>
+     <h4><strong>Address: </strong></h4>
+     <p> Nørreport 8, Aarhus C, 8200
+     </p>
 </div>
 <div id="map" class="mapstyle"
     data-lat="56.16061581212305" 
@@ -142,7 +157,7 @@
     <div class="overlay-content">
       <span class="close-button">&times;</span>
       <h2>Rate your experience</h2>
-      <input type="text" class="user-name" placeholder="What is your name?" />
+      <input type="text" class="user-name" placeholder="What is your name?">
       <div class="rating-bubbles"></div>
       <textarea class="user-feedback" placeholder="Tell us more: what did you like, how was the atmosphere, which beer would you recommend"></textarea>
       <button class="button">Submit</button>

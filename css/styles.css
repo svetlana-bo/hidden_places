@@ -66,14 +66,12 @@ a {
   }
 
   .button:hover, 
-  button:hover, 
   .go-back-button:hover {
     background-color: #D9B79A; /* Hover effect */
     border: 1px solid #D9B79A;
   }
 
   .button:active, 
-  button:active, 
   .go-back-button:active {
     background-color: #D9B79A; /* Hover effect */
     border: 1px solid #D9B79A;
@@ -88,21 +86,62 @@ a {
     box-sizing: border-box;
   } 
 
-  .top-nav .logo img {
-    height: 30px;
-    width: auto;
-  }
-  
-  .top-nav .menu img {
+  .top-nav .logo img ,
+  .top-nav .menu img
+  {
     height: 30px;
     width: auto;
     cursor: pointer;
-    background-color: transparent;
   }
+  
 
-  .logo-display {
-    height: 72px;
-  }
+  
+
+/*Burger menu*/ 
+
+/* Menu Panel */
+.menu-panel {
+  position: fixed;
+  top: 0;
+  right: -100%; /* Hidden by default */
+  width: 250px;
+  height: 100%;
+  background-color: #324B48;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+  transition: right 0.3s ease-in-out;
+  z-index: 10;
+  padding: 20px 20px 20px; /* Add padding for the menu items */
+  height: auto; /* Only take the content height */
+
+}
+
+.menu-panel.open {
+  right: 0; /* Slide in */
+}
+
+.menu-panel ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-panel li {
+  margin: 20px 0;
+}
+
+.menu-panel a {
+  text-decoration: none;
+  font-family: Lustria;
+  font-size: 18px;
+  color: #F0F0F2;
+  display: block;
+  transition: color 0.2s ease;
+}
+
+.menu-panel a:hover {
+  color:#D9B79A
+}
+
 
 /*Footer */
 

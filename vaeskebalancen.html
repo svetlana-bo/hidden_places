@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Væskebalancen Bar - Aarhus Craft Beer Society</title>
+    <meta name="description" content="Explore Væskebalancen Bar in Aarhus">
+
+    <!-- Favicons-->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/subpage.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+   
+</head>
+<body>
+    
+
+    
+<!-- Top nav section-->
+<div class="top-nav-subpage">
+    <!-- Top nav-->
+    <a href="index.html" class="logo">
+        <img src="/images/logo-light.png" alt="Logo">
+    </a>
+
+    <a class="menu" id="menuIcon">
+      <img src="../images/icon-menu.svg" alt="Menu">
+    </a>
+</div>
+
+
+<!-- Burger Menu -->
+<nav class="menu-panel" id="menuPanel">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="erlings.html">Erlings Jazz- & Ølsbar</a></li>
+    <li><a href="vaeskebalancen.html">Væskebalancen</a></li>
+    <li><a href="mig_og_olsnedkeren.html">Mig og Ølsnedkeren</a></li>
+    <li>
+      <a href="#" id="languageToggle">EN / DA</a>
+    </li>
+  </ul>
+</nav>
+
+
+ <!-- Info section-->
+ <section>  
+
+    <h2 style="color: #D9B79A">Væskebalancen Bar</h2>
+
+    <div class="photo-gallery">
+        <button class="arrow left-arrow">&lt;</button>
+        <div class="slider-container">
+          <div class="slider">
+            <!-- Images will be dynamically added here -->
+          </div>
+        </div>
+        <button class="arrow right-arrow">&gt;</button>
+      </div>
+
+      <div class="hours-of-work">
+        <p><strong>Mon-Thu:</strong> 14:00-00:00</p>
+        <p><strong>Fri-Sat:</strong> 14:00-02:00</p>
+        <p><strong>Sun:</strong> Closed</p>
+      </div>
+
+<p class="story-box">Væskebalancen was established in early 2020 by Nick Theilgaard Olesen, co-owner of Mig & Ølsnedkeren in Mejlgade, and Lars Nielsen, an experienced beer importer. Their goal was to provide Aarhus with a dedicated bottleshop offering a diverse selection of craft beers for customers to enjoy at home. They opened their first shop in Vestergade, Aarhus, in May 2020. 
+<br><br>
+    The success of the Vestergade location led to the opening of a cozy basement bar at the corner of Jægergårdsgade and Frederiks Allé in spring 2022. This venue features 14 rotating taps and a selection of bottled and canned beers, creating an informal and welcoming atmosphere for beer enthusiasts. 
+<br><br>
+    Throughout its growth, Væskebalancen has remained committed to providing exceptional service and guidance, ensuring that customers enjoy quality beers served with a smile. 
+</p>
+</section>
+
+<section class="drop-downs">
+
+<div class="on-tap-section" data-place="Is in Veskebalancen">
+    <h2 class="dropdown-title">
+      On tap this week
+      <span class="arrow-down">&#9660;</span> <!-- Downward arrow symbol -->
+    </h2>
+    <ul class="beer-list">
+      <!-- Beer names will be added dynamically -->
+    </ul>
+</div>
+
+<div class="event-section" data-place="Væskebalancen">
+    <h2 class="dropdown-title">
+      Upcoming events
+      <span class="arrow-down">&#9660;</span>
+    </h2>
+    <ul class="event-list">
+      <!-- Events will be dynamically added here -->
+    </ul>
+  </div>
+
+<!-- Reviews container -->
+  <div class="reviews-section dropdown"
+     data-rating-image="images/rating-4bubs.png"
+     data-rating="4.7"
+     data-reviews="16"
+     data-place="Væskebalancen">
+    <h2 class="dropdown-title">
+      Reviews
+      <span class="arrow-down">&#9660;</span>
+    </h2>
+    <div class="review-content">
+      <!-- Content dynamically added here -->
+    </div>
+  </div>  
+  
+  <div class="reviews-section dropdown">
+  <h2 class="dropdown-title">
+   Find the place
+ </h2>
+</div>
+
+</section>
+
+<section class="find-us-wrapper">
+<div class="address-box">
+      <h4><strong>Links to the place:</strong></h4>
+      <div class="social-icons">
+        <a href="https://example.com" target="_blank" aria-label="Website">
+            <img src="images/icon-link.svg" alt="Link icon">
+        </a>
+        <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+            <img src="/images/icon-instagram.svg" alt="Instagram icon">
+        </a>
+        <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+            <img src="images/icon-facebook.svg" alt="Facebook icon">
+        </a>
+    </div>
+    <br>
+     <h4><strong>Address:</strong></h4>
+      <p>Nørreport 8, Aarhus C, 8200
+      </p>
+</div>
+<div id="map" class="mapstyle"
+    data-lat="56.16061581212305" 
+    data-lng="10.21346334127921" 
+    data-zoom="15">
+</div>
+
+</section>
+
+<!-- Submit review overlay -->
+<div class="reviews-section rate">
+    <div class="rating-bubbles"></div>
+  </div>
+  <div class="overlay hidden">
+    <div class="overlay-content">
+      <span class="close-button">&times;</span>
+      <h2>Rate your experience</h2>
+      <input type="text" class="user-name" placeholder="What is your name?">
+      <div class="rating-bubbles"></div>
+      <textarea class="user-feedback" placeholder="Tell us more: what did you like, how was the atmosphere, which beer would you recommend"></textarea>
+      <button class="button">Submit</button>
+    </div>
+  </div>
+
+  
+
+ <!-- Submitted Review Overlay -->
+<div class="overlay submitted hidden">
+    <div class="overlay-content">
+      <img src="images/logo-light.png" alt="Logo" style="height: 72px; width: 48px;">
+      <h2>Thank you</h2>
+      <p>Your review has been submitted and will be posted on the website shortly.</p>
+      <button class="button go-back-button">Go back</button>
+    </div>
+  </div> 
+  
+<script src="javascript/main_script.js" ></script>
+<script src="javascript/overlays.js" defer></script>
+<script src="javascript/drop-down.js" defer></script>
+<script src="javascript/map.js" ></script>
+
+<script>
+    // Place 1 photos
+    const erlingPhotos = ["images/places/veske1.jpeg", "images/places/veske2.jpeg", "images/places/veske3.jpeg"];
+    initializePhotoGallery(erlingPhotos);
+  </script>
+
+</body>
+
+
+

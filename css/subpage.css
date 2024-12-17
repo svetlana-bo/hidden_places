@@ -213,8 +213,8 @@
   
   /* Individual bubbles */
   .rating-bubbles img {
-    width: 40px; /* Size of each bubble */
-    height: 40px;
+    width: 21px; /* Size of each bubble */
+    height: 21px;
     cursor: pointer; /* Indicates clickability */
     transition: transform 0.2s ease; /* Add subtle animation */
   }
@@ -253,6 +253,7 @@
 
 /* Find us section */
 .find-us-wrapper {
+    width: 100%;
     display: flex;
     flex-direction: column; /* Default: stack items vertically */
     align-items: center; /* Center items horizontally */

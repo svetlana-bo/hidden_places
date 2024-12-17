@@ -1,19 +1,29 @@
 document.addEventListener("DOMContentLoaded", () => {
   console.log("DOM fully loaded");
 
-  // BEER SECTION (On Tap)
-  const beerSection = document.querySelector(".on-tap-section");
-  if (beerSection) {
-    const beerTitle = beerSection.querySelector(".dropdown-title");
-    const beerArrow = beerSection.querySelector(".arrow-down");
-    const beerList = beerSection.querySelector(".beer-list");
+// BEER SECTION (On Tap)
+const beerSection = document.querySelector(".on-tap-section");
+if (beerSection) {
+  const beerTitle = beerSection.querySelector(".dropdown-title");
+  const beerArrow = beerSection.querySelector(".arrow-down");
+  const beerList = beerSection.querySelector(".beer-list");
 
-    if (beerTitle && beerArrow && beerList) {
-      fetch("../json/beers.json")
-        .then((response) => response.json())
-        .then((data) => {
-          const beersInErlings = data.filter((beer) => beer["Is in Erlings"]);
-          beersInErlings.forEach((beer) => {
+  if (beerTitle && beerArrow && beerList) {
+    const placeFilter = beerSection.getAttribute("data-place"); // Extract data-place
+    console.log("Place Filter:", placeFilter);
+
+    fetch("../json/beers.json")
+      .then((response) => response.json())
+      .then((data) => {
+        // Filter beers dynamically based on data-place attribute
+        const filteredBeers = data.filter((beer) => beer[placeFilter] === true);
+
+        // Clear existing list
+        beerList.innerHTML = "";
+
+        // Populate the beer list
+        if (filteredBeers.length > 0) {
+          filteredBeers.forEach((beer) => {
             const listItem = document.createElement("li");
             listItem.innerHTML = `
               <div class="beer-item">
@@ -28,15 +38,24 @@ document.addEventListener("DOMContentLoaded", () => {
             `;
             beerList.appendChild(listItem);
           });
+        } else {
+          beerList.innerHTML = "<li>No beers available for this bar.</li>";
+        }
 
-          beerList.style.maxHeight = "0px";
-        });
-
-      beerTitle.addEventListener("click", () => {
-        toggleDropdown(beerList, beerArrow);
+        // Initialize dropdown state
+        beerList.style.maxHeight = "0px";
+      })
+      .catch((error) => {
+        console.error("Error fetching or processing the JSON file:", error);
       });
-    }
+
+    // Dropdown toggle functionality
+    beerTitle.addEventListener("click", () => {
+      toggleDropdown(beerList, beerArrow);
+    });
   }
+}
+
 
   // EVENT SECTION (Upcoming Events)
   const eventSection = document.querySelector(".event-section");

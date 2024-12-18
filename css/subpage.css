@@ -1,24 +1,5 @@
  /* Styling Subpages */
 
-/* Top navigation bar styling */
-.top-nav-subpage {
-    display: flex; /* Arrange items in a row */
-    justify-content: space-between; /* Space out logo and menu */
-    align-items: center; /* Vertically center items */
-    padding: 24px; /* Space around the nav items */
-    width: 100%; /* Full width */
-    box-sizing: border-box; /* Include padding in width calculation */
-    background-color: none;
-    top: 0;
-    z-index: 10; /* Ensure it stays above other elements */
-  }
-  
-  /* Logo styling */
-  .logo img {
-    height: 30px; /* Adjust logo size */
-    width: auto; /* Maintain aspect ratio */
-  }
-  
   .photo-gallery {
     position: relative;
     width: 340px;
@@ -26,7 +7,7 @@
     height: 360px;
     margin: auto;
     overflow: hidden;
-    border: 2px solid #ccc;
+    border: none;
   }
   
   #photo-display {

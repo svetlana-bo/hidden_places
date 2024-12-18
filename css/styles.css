@@ -3,14 +3,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  
+}
 
 body {
     background-color: #324B48;
     font-size: 16px;
     color: #F0F0F2;
     font-family: "Noto Sans";
-    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -47,8 +46,8 @@ a {
     text-decoration: none; /* Removes the underline */
     color: inherit; /* Inherits the text color from the parent */
     cursor: pointer; /* Ensures the pointer cursor */
-    padding: none;
-    margin: none;
+    padding: 0;
+    margin: 0;
 }
 
 .button, button, go-back-button {
@@ -201,9 +200,6 @@ a {
   display: inline;
 }
 
-
-
-
 .hero-text {
     
   flex-grow: 1; /* Takes up the remaining space */
@@ -216,8 +212,6 @@ a {
   width: 100%;
   transform: translateY(-80px);
 }
-
-
 
 
 .logo-display {
@@ -311,6 +305,8 @@ a {
 
 /* Card container styling */
 .place-card {
+    flex-direction: column;
+    justify-content: space-between;
     background-color: #324B48; /* Match the page theme */
     color: #F0F0F2;
     border: none;
@@ -319,12 +315,11 @@ a {
     text-align: center;
     width: 100%;
     max-width: 400px; /* Restrict the width */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
   }
 
   .place-card h3 {
     color: #D9B79A;
-    margin-bottom: 5;
+    margin-bottom: 5px;
 }  
   .place-card p {
     text-align: left;
@@ -376,7 +371,7 @@ a {
   padding: 24px; /* Space around the nav items */
   width: 100%; /* Full width */
   box-sizing: border-box; /* Include padding in width calculation */
-  background-color: none;
+  background-color: transparent;
   top: 0;
   z-index: 10; /* Ensure it stays above other elements */
 }
@@ -472,4 +467,4 @@ a {
       display: none; /* Show the <br> only on desktop */
 
 }
-};
+}

@@ -1,3 +1,4 @@
+
 // search.js
 
 document.addEventListener("DOMContentLoaded", () => {

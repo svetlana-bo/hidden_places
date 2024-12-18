@@ -1,4 +1,4 @@
-// Global function definition
+// Global function definition: Interactive Photo Gallery on subpages
 function initializePhotoGallery(photoArray) {
   let currentPhotoIndex = 1; // Start at 1 because of the duplicated first image
 

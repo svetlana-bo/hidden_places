@@ -15,7 +15,7 @@ if (beerSection) {
     fetch("../json/beers.json")
       .then((response) => response.json())
       .then((data) => {
-        // Filter beers dynamically based on data-place attribute
+        // Filter beers dynamically based on data-place attribute in HTML
         const filteredBeers = data.filter((beer) => beer[placeFilter] === true);
 
         // Clear existing list
@@ -65,6 +65,7 @@ if (beerSection) {
     const eventList = eventSection.querySelector(".event-list");
 
     if (eventTitle && eventArrow && eventList) {
+       // Filter events dynamically based on data-place attribute in HTML
       const placeFilter = eventSection.getAttribute("data-place");
       console.log("Place Filter:", placeFilter);
 
@@ -130,7 +131,7 @@ if (beerSection) {
     rateDiv.classList.add("rate");
     rateDiv.innerHTML = `<h2>Rate your experience</h2>`;
 
-    // Create and append bubbles for rating
+    // Create and append bubbles for rating (createBubbles funtion is defined in overlays.js)
     const ratingBubblesContainer = createBubbles((rating) => {
       console.log(`User selected rating: ${rating}`);
       updateOverlayBubbles(rating);

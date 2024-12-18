@@ -39,16 +39,9 @@ document.addEventListener("DOMContentLoaded", () => {
     window.showOverlay = showOverlay;
     
   
-    function updateOverlayBubbles(rating) {
-      const bubbles = overlayBubblesContainer.querySelectorAll("img");
-      bubbles.forEach((bubble, index) => {
-        bubble.src = index < rating ? "images/rating-filled-bub.png" : "images/rating-empty-bub.png";
-      });
-    }
+    
 
-     // Attach to window object
-     window.updateOverlayBubbles = updateOverlayBubbles;
-  
+    // Create Bubbles rating
     function createBubbles(onClick, container = null) {
         const bubbleContainer = container || document.createElement("div");
         if (!container) bubbleContainer.classList.add("rating-bubbles");
@@ -63,8 +56,18 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         return bubbleContainer;
       }
-      
       // Attach to window object
       window.createBubbles = createBubbles;
+
+
+    // Update Bubbles rating
+      function updateOverlayBubbles(rating) {
+        const bubbles = overlayBubblesContainer.querySelectorAll("img");
+        bubbles.forEach((bubble, index) => {
+          bubble.src = index < rating ? "images/rating-filled-bub.png" : "images/rating-empty-bub.png";
+        });
+      }
+       // Attach to window object
+       window.updateOverlayBubbles = updateOverlayBubbles;
   });
   

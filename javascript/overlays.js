@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
       overlay.classList.remove("visible");
     });
   
-    // Functions
+    // Show Overlay
     function showOverlay() {
       overlay.classList.add("visible");
     }

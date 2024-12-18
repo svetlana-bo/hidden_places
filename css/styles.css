@@ -219,8 +219,8 @@ a {
   padding-bottom: 24px;
   margin: 16px 0;
 }
-/*Styling Beer Search container*/
 
+/*Styling Beer Search container*/
 .beer-search-wrapper {
     display: flex;
     flex-direction: column;
@@ -240,7 +240,7 @@ a {
     box-sizing: border-box;
   }
   
-  /* Search container styling */
+  /* Search box styling */
   .search-container {
     display: flex;
     align-items: center;
@@ -285,12 +285,11 @@ a {
   }
 
 
-/* Styling Explore hidden places section */
 
+/* Styling Explore hidden places section */
 .explore-section {
     margin: 65px 0 0 0;
 }
-
 
 .cards-wrapper {
     display: flex; /* Arrange cards in a row */
@@ -361,7 +360,7 @@ a {
 }
 
 
-  /* Styling Subpages */
+/* Styling Subpages */
 
 /* Top navigation bar styling */
 .top-nav-subpage {
@@ -453,6 +452,7 @@ a {
         max-width: 500px; /* Wider max-width on desktop */
       }
     
+    /* Ensure horisontal alignment on wider screens */  
     .cards-wrapper {
         flex-direction: row;
         flex-wrap: wrap;

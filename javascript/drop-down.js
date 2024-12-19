@@ -12,7 +12,7 @@ if (beerSection) {
     const placeFilter = beerSection.getAttribute("data-place"); // Extract data-place
     console.log("Place Filter:", placeFilter);
 
-    fetch("https://github.com/svetlana-bo/hidden_places/blob/main/json/beers.json")
+    fetch("../json/beers.json")
       .then((response) => response.json())
       .then((data) => {
         // Filter beers dynamically based on data-place attribute in HTML

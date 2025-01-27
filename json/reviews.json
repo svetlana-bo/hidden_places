@@ -2,28 +2,28 @@
       {
         "place": "Erlings",
         "name": "Tom S.",
-        "rating": "../images/rating-5bubs.svg",
+        "rating": "/images/rating-5bubs.svg",
         "when": "3 days ago",
         "review": "This is my local watering hole and I love the place. Always different beers on tap and good service. Occasionally there are also live music from local jazz musicians. Great place!!"
       },
       {
         "place": "Erlings",
         "name": "Andres P.",
-        "rating": "../images/rating-5bubs.svg",
+        "rating": "/images/rating-5bubs.svg",
         "when": "1 month ago",
         "review": "A really cozy place to enjoy chatting with friends and listen soft music. The personal is also very nice and there are good beers to choose."
       },
       {
         "place": "Erlings",
         "name": "Stefanie Z.",
-        "rating": "../images/rating-5bubs.svg",
+        "rating": "/images/rating-5bubs.svg",
         "when": "1 month ago",
         "review": "Cool live jazz, great beer selection and friendly staff. Come early if you want a seat!"
       },
       {
         "place": "Erlings",
         "name": "Morten M.",
-        "rating": "https://github.com/svetlana-bo/hidden_places/blob/main/images/rating-4bubs.svg",
+        "rating": "../images/rating-4bubs.png",
         "when": "3 months ago",
         "review": "Kind service. Fair prices. 10 craft beers on tap, a few bottles/can as well. Very small place, but very cosy."
       },
@@ -79,7 +79,7 @@
       {
         "place": "Mig og Oelsnedkeren",
         "name": "Angela V.",
-        "rating": "https://github.com/svetlana-bo/hidden_places/blob/main/images/rating-4bubs.svg",
+        "rating": "../images/rating-4bubs.svg",
         "when": "1 month ago",
         "review": "Not as good as the Copenhagen bar, but still worth a stop. Good beers on tap, not much on cans or bottles."
       }

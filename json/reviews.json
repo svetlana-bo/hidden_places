@@ -23,7 +23,7 @@
       {
         "place": "Erlings",
         "name": "Morten M.",
-        "rating": "../images/rating-4bubs.png",
+        "rating": "https://github.com/svetlana-bo/hidden_places/blob/main/images/rating-4bubs.svg",
         "when": "3 months ago",
         "review": "Kind service. Fair prices. 10 craft beers on tap, a few bottles/can as well. Very small place, but very cosy."
       },
@@ -79,7 +79,7 @@
       {
         "place": "Mig og Oelsnedkeren",
         "name": "Angela V.",
-        "rating": "../images/rating-4bubs.svg",
+        "rating": "https://github.com/svetlana-bo/hidden_places/blob/main/images/rating-4bubs.svg",
         "when": "1 month ago",
         "review": "Not as good as the Copenhagen bar, but still worth a stop. Good beers on tap, not much on cans or bottles."
       }

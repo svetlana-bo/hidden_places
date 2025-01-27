@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let beers = [];
   
     // Fetch the beers.json data
-    fetch("../json/beers.json")
+    fetch("https://raw.githubusercontent.com/svetlana-bo/hidden_places/refs/heads/main/json/beers.json")
       .then((response) => response.json())
       .then((data) => {
         beers = data;

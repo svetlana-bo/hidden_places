@@ -69,7 +69,7 @@ if (beerSection) {
       const placeFilter = eventSection.getAttribute("data-place");
       console.log("Place Filter:", placeFilter);
 
-      fetch("../json/events.json")
+      fetch("https://raw.githubusercontent.com/svetlana-bo/hidden_places/refs/heads/main/json/events.json")
         .then((response) => response.json())
         .then((data) => {
           const filteredEvents = data.filter((event) => event.place === placeFilter);
@@ -149,7 +149,7 @@ if (beerSection) {
 
     // Fetch and add community reviews based on `data-place`
     const placeFilter = reviewsDropdownSection.getAttribute("data-place");
-    fetch("../json/reviews.json")
+    fetch("https://raw.githubusercontent.com/svetlana-bo/hidden_places/refs/heads/main/json/reviews.json")
       .then((response) => response.json())
       .then((data) => {
         const filteredReviews = data.filter((review) => review["place"] === placeFilter);
